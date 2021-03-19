@@ -4,6 +4,10 @@ html, body {
   padding:0;
 }
 
+#header {
+  border-bottom: 20px white;
+}
+
 .navbar {
   background-color:#bdccd4;
   padding-left: 30px;
@@ -16,6 +20,7 @@ html, body {
   align-items: center;
   font-size: 14px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  
 
 }
 
@@ -243,6 +248,7 @@ html, body {
   padding:25px;
   background-image: url(../images/golden-retriever.jpg);
   background-repeat: no-repeat;
+  padding-top: 100px;
 }
 
 #home {
