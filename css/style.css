@@ -1,8 +1,17 @@
 
+html, body {
+  margin:0;
+  padding:0;
+}
+
 .navbar {
   background-color:#bdccd4;
+  padding-left: 30px;
   color: white;
   display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
   justify-content: space-around;
   align-items: center;
   font-size: 14px;
@@ -42,10 +51,6 @@
   color: royalblue;
 }
 
-.navbar-logo {
-  width: 23%;
-  padding: 1%;
-}
 
 #footer {
   background-color:#bdccd4;
@@ -87,8 +92,10 @@
 @media all and (max-width: 600px) {
   .navbar {
     flex-direction: column;
-    position: relative;
-    padding: 38px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
   }
 
 .menu-line {
@@ -96,6 +103,7 @@
   height: 3px;
   background-color: white;
   margin-bottom: 4px;
+  margin-right: 40px;
 }
 
   .menu {
@@ -124,15 +132,39 @@
   }
 
   .subsection {
-    padding: 50px;;
-    align-items: center;
-    justify-content: space-evenly;
+      display: inline-flex;
+      height: 300px;
+      width: 300px;
+      justify-content:space-around;
+      align-items: center;
+      background-color: #bdccd4;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      overflow: hidden;
+      flex-direction: column;
   }
 
 
 
 }
 
+@media all and (max-width: 1000px) {
+  #services {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+  }
+
+  .subsection {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
 
 
 
@@ -170,15 +202,19 @@
   }
 
 .subsection {
-  display: inline-flex;
-  height: 250px;
-  width: 250px;
-  justify-content: space-evenly;
+  display: inline-block;
+  height: 300px;
+  width:300px;
   align-items: center;
   background-color: #bdccd4;
-  padding: 20px;
-  overflow: hidden;
 }
+
+#services {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
 
 .subsection h1 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -194,11 +230,10 @@
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
   color: white;
-  display:inline-block;
-  position: relative;
-  justify-content: center;
+  position: center;
   align-content: center;
-
+  margin: 50px;
+  
 }
 
 #heroimg {
@@ -214,9 +249,6 @@
   background-color: cadetblue;
 }
 
-#services {
-  background-color:white;
-}
 
 #about {
 background-color: #bdccd4;
