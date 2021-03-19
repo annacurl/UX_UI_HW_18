@@ -4,9 +4,6 @@ html, body {
   padding:0;
 }
 
-#header {
-  border-bottom: 20px white;
-}
 
 .navbar {
   background-color:#bdccd4;
@@ -19,9 +16,40 @@ html, body {
   justify-content: space-around;
   align-items: center;
   font-size: 14px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   
 
+}
+
+#headline {
+  padding: 50px;
+  color: white;
+  height: 200px;
+  width: 300px;
+  background-color: rgba(153, 182, 211, 0.8);
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+#headline h2 {
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+#headline h3 {
+  font-size: 12px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: lighter;
+  line-height: 24px;
+}
+
+#headline button {
+  width: 150px;
+  height: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 10px;
 }
 
 .h1 {
@@ -54,6 +82,7 @@ html, body {
 
 .navbar a:hover {
   color: royalblue;
+  font-weight: bold;
 }
 
 
